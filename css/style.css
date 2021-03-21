@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+.accordion {
+    background-color: #dfb048;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.accordion > li > p {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    transition: 1s;
+}
+.accordion > li > p:hover{
+    cursor: pointer;
+    background-color: #916810;
+}
+
+.accordion > li > p > span:first-child {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+.accordion > li > p > span:nth-child(2){
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.accordion > li > ul {
+    display: none;
+    background-color: #a7a1a1;
+}
+
+.accordion > li > ul > li {
+    color: white;
+    font-size: 18px;
+    padding: 20px 40px;
+    transition: 1s;
+}
+
+.accordion > li > ul > li:hover{
+    background-color: #444343;
+}
+
